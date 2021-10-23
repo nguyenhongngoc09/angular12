@@ -1,0 +1,7 @@
+<p>article-list works!</p>
+
+<ul>
+  <li *ngFor="let article of articles$ | async">
+    <a [routerLink]="article.slug"> {{article.title}}</a>
+  </li>
+</ul>

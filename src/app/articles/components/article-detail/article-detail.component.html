@@ -1,0 +1,11 @@
+<p>article-detail works!</p>
+
+<ng-container *ngIf="article$ | async as article;else noArticle">
+  <div>
+    <h3>{{article.title}}</h3>
+    <p>{{article.body}}</p>
+  </div>
+</ng-container>
+<ng-template #noArticle>
+  No article found
+</ng-template>
